@@ -74,7 +74,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-lg sm:text-xl text-slate-600 mb-8 sm:mb-10 max-w-2xl leading-relaxed px-2">
-          More than just a website. I design custom, blazing-fast web experiences and provide the marketing strategies you need to turn visitors into loyal customers.
+          More than just a website. We design custom, blazing-fast web experiences and provide the marketing strategies you need to turn visitors into loyal customers.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
           <Link href="/contact" className="w-full sm:w-auto">
@@ -251,8 +251,8 @@ export default function Home() {
                     </div>
                     <span className="text-sm font-bold text-slate-400 group-hover:text-white transition-colors">Follow Me</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">@Pratik Shinde</h3>
-                  <p className="text-slate-400 mb-6">Follow my journey as a freelance web developer. I post coding tips, project updates, and web design strategies.</p>
+                  <h3 className="text-2xl font-bold text-white mb-2">@Stack&Scale</h3>
+                  <p className="text-slate-400 mb-6">Connect with us on Instagram , for more updates and insights.</p>
                   <div className="flex items-center text-pink-400 font-semibold group-hover:translate-x-2 transition-transform">
                     Connect on Instagram 
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
