@@ -121,17 +121,17 @@ export default function Contact() {
             <form onSubmit={handleSubmit}>
               <div className="mb-4 sm:mb-5">
                 <label className="block text-slate-700 text-sm font-bold mb-2" htmlFor="name">Name <span className="text-red-500">*</span></label>
-                <input required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="name" type="text" placeholder="John Doe" />
+                <input required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="name" type="text" placeholder="Your Name/ Company Name" />
               </div>
               
               <div className="mb-4 sm:mb-5">
                 <label className="block text-slate-700 text-sm font-bold mb-2" htmlFor="phone">Contact Number <span className="text-red-500">*</span></label>
-                <input required value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="phone" type="tel" placeholder="+91 98765 43210" />
+                <input required value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="phone" type="tel" placeholder="+91 00000 00000" />
               </div>
 
               <div className="mb-4 sm:mb-5">
                 <label className="block text-slate-700 text-sm font-bold mb-2" htmlFor="email">Email <span className="text-slate-400 font-normal">(Optional)</span></label>
-                <input value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="email" type="email" placeholder="john@company.com" />
+                <input value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition text-base text-slate-900" id="email" type="email" placeholder="Your Email" />
               </div>
 
               <div className="mb-6 sm:mb-8">
