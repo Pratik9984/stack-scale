@@ -98,7 +98,7 @@ export default function Home() {
               Everything you need to <span className="text-blue-600">launch and grow</span>.
             </h2>
             <p className="text-base sm:text-lg text-slate-600 px-2">
-              I don't just write code. I partner with brands to build complete digital ecosystems that drive traffic and generate revenue.
+              We don't just write code. We partner with brands to build complete digital ecosystems that drive traffic and generate revenue.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -148,7 +148,7 @@ export default function Home() {
           </h2>
 
           <p className="text-base sm:text-xl text-slate-600 mb-10 sm:mb-12 leading-relaxed max-w-2xl mx-auto px-2">
-            I am officially launching my freelance web agency. To build a world-class portfolio, I am taking on my first three clients at a heavily discounted rate. You get premium, dedicated agency service for a fraction of the cost.
+            We are officially launching our freelance web agency. To build a world-class portfolio, We are taking on our first three clients at a heavily discounted rate. You get premium, dedicated agency service for a fraction of the cost.
           </p>
 
           <div className="bg-white p-6 sm:p-8 md:p-12 rounded-3xl shadow-xl border border-slate-100 text-left relative overflow-hidden transform hover:-translate-y-1 transition duration-300 mx-2 sm:mx-0">
@@ -162,7 +162,7 @@ export default function Home() {
                 </div>
                 <div>
                   <strong className="block text-slate-900 mb-1">VIP Attention</strong> 
-                  Since you are my primary focus, your brand gets 100% of my time, energy, and code. No cutting corners.
+                  Since you are our primary focus, your brand gets 100% of our time, energy, and code. No cutting corners.
                 </div>
               </li>
               <li className="flex items-start gap-3 sm:gap-4 text-slate-700 text-sm sm:text-base">
@@ -180,7 +180,7 @@ export default function Home() {
                 </div>
                 <div>
                   <strong className="block text-slate-900 mb-1">Portfolio Pricing</strong> 
-                  I need an amazing case study to show future clients. You get a high-end digital presence at a fraction of standard agency rates.
+                  We need an amazing case study to show future clients. You get a high-end digital presence at a fraction of standard agency rates.
                 </div>
               </li>
             </ul>
@@ -228,7 +228,7 @@ export default function Home() {
                 </Link>
                 <a href="mailto:pratikshinde909090@gmail.com">
                   <button className="w-full sm:w-auto bg-slate-800 border border-slate-700 text-white font-bold py-3.5 sm:py-4 px-8 rounded-xl hover:bg-slate-700 transition duration-300 text-base">
-                    Email Me Directly
+                    Email Us Directly
                   </button>
                 </a>
               </div>
