@@ -251,7 +251,7 @@ export default function Home() {
                     </div>
                     <span className="text-sm font-bold text-slate-400 group-hover:text-white transition-colors">Follow Me</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-2">@Pratik Shinde</h3>
+                  <h3 className="text-2xl font-bold text-white mb-2">@Stack&Scale</h3>
                   <p className="text-slate-400 mb-6">Connect with us on Instagram , for more updates and insights. </p>
                   <div className="flex items-center text-pink-400 font-semibold group-hover:translate-x-2 transition-transform">
                     Connect on Instagram 
