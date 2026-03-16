@@ -78,7 +78,7 @@ export default function Contact() {
             Let's build something <span className="text-blue-600">great.</span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 max-w-2xl leading-relaxed mx-auto md:mx-0">
-            Whether you are looking to launch a new brand, completely revamp an existing website, or just need some advice on your digital strategy, I am here to help.
+            Whether you are looking to launch a new brand, completely revamp an existing website, or just need some advice on your digital strategy, We are here to help.
           </p>
         </div>
 
