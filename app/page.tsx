@@ -233,7 +233,7 @@ export default function Home() {
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </button>
                 </Link>
-                <a href="mailto:hello.stackandscale@gmail.com.com">
+                <a href="mailto:hello.stackandscale@gmail.com">
                   <button className="w-full sm:w-auto bg-slate-800 border border-slate-700 text-white font-bold py-3.5 sm:py-4 px-8 rounded-xl hover:bg-slate-700 transition duration-300 text-base">
                     Email Us Directly
                   </button>
