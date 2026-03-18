@@ -22,12 +22,19 @@ export default function Home() {
         </svg>
       </a>
 
-      {/* Proper Responsive Navigation Header */}
-      <header className="w-full relative z-40 bg-slate-50">
+      {/* FIXED Header */}
+      <header className="w-full fixed top-0 left-0 z-40 bg-slate-50 border-b border-slate-100">
         <nav className="flex items-center justify-between p-4 sm:p-6 max-w-7xl mx-auto">
+          {/* Logo Lockup */}
           <Link href="/">
-            <div className="font-extrabold text-xl sm:text-2xl tracking-tighter hover:opacity-80 transition cursor-pointer">
-              Stack<span className="text-blue-600">&Scale</span>
+            <div className="flex items-center gap-3 group cursor-pointer">
+              {/* Logo Image Container optimized for dark background */}
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-md overflow-hidden flex items-center justify-center bg-slate-900 shadow-sm">
+                <img src="/icon.png" alt="Stack&Scale Logo" className="w-full h-full object-cover" />
+              </div>
+              <div className="font-extrabold text-xl sm:text-2xl tracking-tighter group-hover:opacity-80 transition">
+                Stack<span className="text-blue-600">&Scale</span>
+              </div>
             </div>
           </Link>
           
@@ -63,12 +70,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-32 flex flex-col items-center text-center relative z-10">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-12 md:pt-48 md:pb-32 flex flex-col items-center text-center relative z-10">
         <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs sm:text-sm tracking-wide uppercase">
           Ready to launch your business online?
         </div>
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 sm:mb-8 leading-tight max-w-4xl">
-          I Help Ambitious Brands <br className="hidden sm:block" />
+          We Help Ambitious Brands <br className="hidden sm:block" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
             Dominate Online.
           </span>
@@ -202,6 +209,7 @@ export default function Home() {
 
       {/* Connect & Follow Section */}
       <section className="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
+        {/* Subtle background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-20 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-500 rounded-full blur-[120px]"></div>
         </div>
@@ -225,7 +233,7 @@ export default function Home() {
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                   </button>
                 </Link>
-                <a href="mailto:hello.stackandscale@gmail.com">
+                <a href="mailto:hello,stackandscale@gmail.com.com">
                   <button className="w-full sm:w-auto bg-slate-800 border border-slate-700 text-white font-bold py-3.5 sm:py-4 px-8 rounded-xl hover:bg-slate-700 transition duration-300 text-base">
                     Email Us Directly
                   </button>
@@ -248,10 +256,10 @@ export default function Home() {
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
                       </svg>
                     </div>
-                    <span className="text-sm font-bold text-slate-400 group-hover:text-white transition-colors">Follow Me</span>
+                    <span className="text-sm font-bold text-slate-400 group-hover:text-white transition-colors">Follow Us</span>
                   </div>
                   <h3 className="text-2xl font-bold text-white mb-2">@Stack&Scale</h3>
-                  <p className="text-slate-400 mb-6">Connect with us on Instagram , for more updates and insights. </p>
+                  <p className="text-slate-400 mb-6">Connect with us on Instagram for more updates, digital strategy insights, and behind-the-scenes content.</p>
                   <div className="flex items-center text-pink-400 font-semibold group-hover:translate-x-2 transition-transform">
                     Connect on Instagram 
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
