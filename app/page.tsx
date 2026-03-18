@@ -237,7 +237,7 @@ export default function Home() {
             {/* Right Side: Instagram Card / Ad Space */}
             <div className="w-full max-w-md mx-auto lg:mx-0 lg:ml-auto">
               <a 
-                href="https://www.instagram.com/pratik__9984?igsh=dWdrcnVram9kbXRh" 
+                href="https://www.instagram.com/stack__and__scale?igsh=MWZwbWExb3hkdDdpeQ==" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block group relative bg-gradient-to-tr from-purple-600 via-pink-500 to-orange-400 p-[2px] rounded-3xl shadow-2xl hover:scale-[1.02] transition-transform duration-300"
