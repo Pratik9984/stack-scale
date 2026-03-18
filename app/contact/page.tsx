@@ -90,7 +90,7 @@ export default function Contact() {
               <h3 className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mb-2 sm:mb-3">Direct Email</h3>
               <a href="mailto:pratikshinde909090@gmail.com" className="text-base sm:text-lg lg:text-2xl font-semibold text-slate-900 hover:text-blue-600 transition flex items-center gap-3 group">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 text-blue-600 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span className="break-all sm:break-normal">pratikshinde909090@gmail.com</span>
+                <span className="break-all sm:break-normal">Hello.StackandScale@gmail.com</span>
               </a>
             </div>
 
