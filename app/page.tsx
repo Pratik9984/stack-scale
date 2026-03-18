@@ -33,8 +33,8 @@ export default function Home() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 font-medium text-slate-600">
-            <Link href="#services" className="hover:text-blue-600 transition">Services</Link>
-            <Link href="#portfolio" className="hover:text-blue-600 transition">Special Offer</Link>
+            <Link href="services" className="hover:text-blue-600 transition">Services</Link>
+            <Link href="portfolio" className="hover:text-blue-600 transition">Special Offer</Link>
             <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>
           </div>
 
