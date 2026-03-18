@@ -22,13 +22,14 @@ export default function Home() {
         </svg>
       </a>
 
-      {/* FIXED Header */}
-      <header className="w-full fixed top-0 left-0 z-40 bg-slate-50 border-b border-slate-100">
+      {/* Proper Responsive Navigation Header (Restored to normal scroll) */}
+      <header className="w-full relative z-40 bg-slate-50">
         <nav className="flex items-center justify-between p-4 sm:p-6 max-w-7xl mx-auto">
+          
           {/* Logo Lockup */}
           <Link href="/">
             <div className="flex items-center gap-3 group cursor-pointer">
-              {/* Logo Image Container optimized for dark background */}
+              {/* Logo Image Container */}
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-md overflow-hidden flex items-center justify-center bg-slate-900 shadow-sm">
                 <img src="/icon.png" alt="Stack&Scale Logo" className="w-full h-full object-cover" />
               </div>
@@ -69,8 +70,8 @@ export default function Home() {
         )}
       </header>
 
-      {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-12 md:pt-48 md:pb-32 flex flex-col items-center text-center relative z-10">
+      {/* Hero Section (Restored padding to original style) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-32 flex flex-col items-center text-center relative z-10">
         <div className="inline-block mb-6 px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-semibold text-xs sm:text-sm tracking-wide uppercase">
           Ready to launch your business online?
         </div>
@@ -207,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Connect & Follow Section */}
+      {/* Connect & Follow Section (Replaces the Form) */}
       <section className="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-20 pointer-events-none">
