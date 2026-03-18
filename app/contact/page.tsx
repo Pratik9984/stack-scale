@@ -6,6 +6,7 @@ import { useState } from 'react';
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState('idle'); // 'idle' | 'submitting' | 'success'
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -56,23 +57,57 @@ export default function Contact() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
+    <main className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden relative">
       
-      {/* Navigation (Fixed for Mobile Visibility) */}
-      <nav className="flex flex-col md:flex-row items-center justify-between p-4 sm:p-6 max-w-7xl mx-auto gap-4 md:gap-0">
-        <Link href="/">
-          <div className="font-extrabold text-xl sm:text-2xl tracking-tighter hover:opacity-80 transition cursor-pointer text-center md:text-left">
-             Stack<span className="text-blue-600">&Scale</span>
+      {/* FIXED Header - Match exact design from homepage */}
+      <header className="w-full fixed top-0 left-0 z-40 bg-slate-50 border-b border-slate-100">
+        <nav className="flex items-center justify-between p-4 sm:p-6 max-w-7xl mx-auto">
+          {/* Logo Lockup */}
+          <Link href="/">
+            <div className="flex items-center gap-3 group cursor-pointer">
+              {/* Logo Image Container */}
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-md overflow-hidden flex items-center justify-center bg-slate-900 shadow-sm">
+                <img src="/icon.png" alt="Stack&Scale Logo" className="w-full h-full object-cover" />
+              </div>
+              <div className="font-extrabold text-xl sm:text-2xl tracking-tighter group-hover:opacity-80 transition">
+                Stack<span className="text-blue-600">&Scale</span>
+              </div>
+            </div>
+          </Link>
+          
+          {/* Desktop Menu - Uses /# to correctly route back to homepage sections */}
+          <div className="hidden md:flex items-center gap-8 font-medium text-slate-600">
+            <a href="/#services" className="hover:text-blue-600 transition">Services</a>
+            <a href="/#portfolio" className="hover:text-blue-600 transition">Special Offer</a>
+            <Link href="/contact" className="text-blue-600 transition">Contact</Link>
           </div>
-        </Link>
-        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 font-medium text-slate-600 text-sm sm:text-base">
-          <Link href="/#services" className="hover:text-blue-600 transition">Services</Link>
-          <Link href="/#portfolio" className="hover:text-blue-600 transition">Special Offer</Link>
-          <Link href="/contact" className="text-blue-600 transition">Contact</Link>
-        </div>
-      </nav>
 
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 py-10 md:py-24">
+          {/* Mobile Hamburger Button */}
+          <button 
+            className="md:hidden p-2 text-slate-600 hover:text-blue-600 focus:outline-none"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            )}
+          </button>
+        </nav>
+
+        {/* Mobile Dropdown Menu */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-slate-100 py-4 px-6 flex flex-col gap-4 font-medium text-slate-600 animate-in slide-in-from-top-2 z-50">
+            <a href="/#services" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Services</a>
+            <a href="/#portfolio" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Special Offer</a>
+            <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block text-blue-600 py-2">Contact</Link>
+          </div>
+        )}
+      </header>
+
+      {/* Main Content Section - Added pt-28 to clear fixed header */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-10 md:pt-36 md:pb-24">
         <div className="text-center md:text-left mb-10 md:mb-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6">
             Let's build something <span className="text-blue-600">great.</span>
@@ -90,7 +125,7 @@ export default function Contact() {
               <h3 className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mb-2 sm:mb-3">Direct Email</h3>
               <a href="mailto:hello.stackandscale@gmail.com" className="text-base sm:text-lg lg:text-2xl font-semibold text-slate-900 hover:text-blue-600 transition flex items-center gap-3 group">
                 <svg className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 text-blue-600 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span className="break-all sm:break-normal">Hello.StackandScale@gmail.com</span>
+                <span className="break-all sm:break-normal">hello.stackandscale@gmail.com</span>
               </a>
             </div>
 
@@ -102,7 +137,10 @@ export default function Contact() {
               </a>
             </div>
             
-            
+            <div className="pt-6 sm:pt-8 border-t border-slate-200">
+              <h3 className="text-xs sm:text-sm font-bold text-slate-400 uppercase tracking-widest mb-2 sm:mb-3">Operating Hours</h3>
+              <p className="text-base sm:text-lg text-slate-700">Available Monday - Saturday<br/>9:00 AM - 6:00 PM IST</p>
+            </div>
           </div>
 
           {/* Contact Form Side */}
