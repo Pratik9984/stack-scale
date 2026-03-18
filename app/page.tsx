@@ -33,8 +33,8 @@ export default function Home() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 font-medium text-slate-600">
-            <Link href="services" className="hover:text-blue-600 transition">Services</Link>
-            <Link href="portfolio" className="hover:text-blue-600 transition">Special Offer</Link>
+            <a href="#services" className="hover:text-blue-600 transition">Services</a>
+            <a href="#portfolio" className="hover:text-blue-600 transition">Special Offer</a>
             <Link href="/contact" className="hover:text-blue-600 transition">Contact</Link>
           </div>
 
@@ -55,8 +55,8 @@ export default function Home() {
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-slate-100 py-4 px-6 flex flex-col gap-4 font-medium text-slate-600 animate-in slide-in-from-top-2 z-50">
-            <Link href="#services" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Services</Link>
-            <Link href="#portfolio" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Special Offer</Link>
+            <a href="#services" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Services</a>
+            <a href="#portfolio" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Special Offer</a>
             <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block hover:text-blue-600 py-2">Contact</Link>
           </div>
         )}
@@ -82,11 +82,11 @@ export default function Home() {
               Start Your Project
             </button>
           </Link>
-          <Link href="#portfolio" className="w-full sm:w-auto">
+          <a href="#portfolio" className="w-full sm:w-auto">
             <button className="w-full sm:w-auto bg-white border-2 border-slate-200 text-slate-900 px-8 py-3.5 sm:py-4 rounded-xl text-base sm:text-lg font-bold hover:border-slate-300 hover:bg-slate-50 transition duration-300">
               View Special Offer
             </button>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -200,9 +200,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Connect & Follow Section (Replaces the Form) */}
+      {/* Connect & Follow Section */}
       <section className="py-16 sm:py-24 bg-slate-900 text-white relative overflow-hidden">
-        {/* Subtle background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl opacity-20 pointer-events-none">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-500 rounded-full blur-[120px]"></div>
         </div>
